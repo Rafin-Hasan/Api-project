@@ -12,6 +12,7 @@ import Contact from "./Pages/Contact";
 import Cart from "./Pages/Cart";
 import NotFound from "./Pages/NotFound";
 import Details from "./Pages/Details";
+import Order from "./Pages/Order";
 
 function App() {
   const route = createBrowserRouter(
@@ -23,6 +24,7 @@ function App() {
         <Route path="/laptop" element={<Laptops />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/details" element={<Details />} />
+        <Route path="/order" element={<Order />} />
         <Route path="*" element={<NotFound />} />
       </Route>
     )

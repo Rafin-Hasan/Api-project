@@ -3,7 +3,7 @@ import Navber from "../Components/Navber";
 import { useNavigate } from "react-router-dom";
 
 const Home = () => {
-  const navigate = useNavigate;
+  const navigate = useNavigate();
   const change = () => {
     navigate("/laptop");
   };

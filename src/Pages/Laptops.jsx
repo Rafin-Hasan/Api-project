@@ -16,10 +16,12 @@ const Laptops = () => {
     );
   }, []);
   const handleadd = (add) => {
-    navigate("/details");
+    navigate("/cart");
     dispatch(singleProductData(add));
   };
-
+  const details = () => {
+    navigate("/details");
+  };
   return (
     <>
       <Navber />
@@ -45,17 +47,20 @@ const Laptops = () => {
                 </ul>
                 <div className="btn items-center">
                   <button
-                    onClick={() => handleadd(item)}
+                    onClick={() => details(item)}
                     className="w-full h-[40px] font-Polksa font-semibold text-white bg-orange-600 p-3 flex justify-center items-center gap-2 rounded-tl-3xl rounded-br-3xl hover:bg-white hover:text-black border-solid border-black hover:border-2"
                   >
                     Details
                   </button>
-                  <button className="w-full h-[40px] font-Polksa font-semibold text-white bg-orange-600 p-3 mt-2 flex justify-center items-center gap-2 rounded-tl-3xl rounded-br-3xl hover:bg-white hover:text-black border-solid border-black hover:border-2">
+                  <button
+                    onClick={() => handleadd(item)}
+                    className="w-full h-[40px] font-Polksa font-semibold text-white bg-orange-600 p-3 mt-2 flex justify-center items-center gap-2 rounded-tl-3xl rounded-br-3xl hover:bg-white hover:text-black border-solid border-black hover:border-2"
+                  >
                     Add to cart
                   </button>
                 </div>
                 <h1 className="text-[22px] font-bold text-red-600 text-center mb-4">
-                  Price :{item.price}{" "}
+                  Price :{item.price}$
                 </h1>
               </div>
             </div>
