@@ -11,13 +11,11 @@ const Laptops = () => {
   const [productData, setProductData] = useState([]);
   const navigate = useNavigate();
   const dispatch = useDispatch();
+  useEffect(() => {
+    Aos.init();
+    Aos.refresh();
+  }, []);
 
-  function animation() {
-    useEffect(() => {
-      Aos.init();
-      Aos.refresh();
-    }, []);
-  }
   useEffect(() => {
     axios("https://api.jsonbin.io/v3/b/667425e1e41b4d34e406309a").then((res) =>
       setProductData(res.data.record)
@@ -27,8 +25,9 @@ const Laptops = () => {
     navigate("/cart");
     dispatch(singleProductData(add));
   };
-  const details = () => {
+  const details = (send) => {
     navigate("/details");
+    dispatch(singleProductData(send));
   };
   return (
     <>
@@ -37,6 +36,7 @@ const Laptops = () => {
         <div className="main-row flex flex-wrap gap-5 justify-center">
           {productData.map((item, i) => (
             <div
+              data-aos="fade-down"
               key={i}
               className="single-card w-[250px] h-[400px] bg-[#9BEC00] rounded-tl-3xl rounded-br-3xl p-5 hover:bg-white hover:text-black border-solid hover:border-2 border-[#059212] hover:scale-90 shadow-[0 20px 25px -5px rgba(0,0,0,0.1), 0 8px 10px -6px rgba(0,0,0,0.1)]"
             >
