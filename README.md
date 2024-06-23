@@ -14,3 +14,14 @@ Fetch data from the custom API
 - Responsive design for better usability on different devices
 
 ## Installation
+1. Clone the repository:
+
+    ```sh
+    git clone https://github.com/yourusername/custom-api-website.git
+    ```
+
+2. Navigate to the project directory:
+
+    ```sh
+    cd custom-api-website
+    ```
