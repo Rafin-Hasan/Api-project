@@ -9,3 +9,8 @@ This repository contains a sample website built using a custom API. The website 
 - [Contributing](#contributing)
 - [License](#license)
 ## Features
+Fetch data from the custom API
+- Display data in a user-friendly format
+- Responsive design for better usability on different devices
+
+## Installation
