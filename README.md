@@ -8,3 +8,4 @@ This repository contains a sample website built using a custom API. The website 
 - [API Documentation](#api-documentation)
 - [Contributing](#contributing)
 - [License](#license)
+## Features
