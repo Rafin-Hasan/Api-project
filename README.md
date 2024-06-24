@@ -21,8 +21,6 @@ Fetch data from the custom API
     ```
 2. Navigate to the project directory:
 
-2. Navigate to the project directory:
-
     ```sh
     cd custom-api-website
     ```
