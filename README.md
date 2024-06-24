@@ -27,3 +27,6 @@ Fetch data from the custom API
     cd custom-api-website
     ```
 3. Install dependencies:
+  ```sh
+    cd custom-api-website
+    ```
