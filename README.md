@@ -29,9 +29,3 @@ Fetch data from the custom API
     cd custom-api-website
     ```
 
-4. Start the development server:
-
-    ```sh
-    npm start
-    ```
-## Usage
