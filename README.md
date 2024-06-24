@@ -33,3 +33,4 @@ Fetch data from the custom API
     ```sh
     npm start
     ```
+## Usage
