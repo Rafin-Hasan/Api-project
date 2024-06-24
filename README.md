@@ -34,3 +34,6 @@ Fetch data from the custom API
     ```
 
 ## Usage
+1. Open your browser and navigate to `http://localhost:3000`.
+2. Interact with the website to see data fetched from the custom API.
+
