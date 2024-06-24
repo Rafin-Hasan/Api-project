@@ -19,6 +19,7 @@ Fetch data from the custom API
     ```sh
     git clone https://github.com/yourusername/custom-api-website.git
     ```
+2. Navigate to the project directory:
 
 2. Navigate to the project directory:
 
