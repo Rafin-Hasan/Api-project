@@ -28,7 +28,8 @@ Fetch data from the custom API
   ```sh
     cd custom-api-website
     ```
-3. Install dependencies:
- ```sh
-    npm install
+4. Start the development server:
+
+    ```sh
+    npm start
     ```
